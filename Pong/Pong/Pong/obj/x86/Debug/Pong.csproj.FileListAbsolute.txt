@@ -1,0 +1,9 @@
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Pong.exe
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Pong.pdb
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\obj\x86\Debug\Pong.csprojResolveAssemblyReference.cache
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\obj\x86\Debug\Pong.exe
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\obj\x86\Debug\Pong.pdb
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Content\paddle.xnb
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Content\ball.xnb
+c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Content\QuartzMS.xnb
