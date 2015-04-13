@@ -7,3 +7,12 @@ c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\obj\x86\Debu
 c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Content\paddle.xnb
 c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Content\ball.xnb
 c:\users\owner\documents\visual studio 2013\Projects\Pong\Pong\Pong\bin\x86\Debug\Content\QuartzMS.xnb
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\bin\x86\Debug\Content\paddle.xnb
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\bin\x86\Debug\Content\ball.xnb
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\bin\x86\Debug\Content\QuartzMS.xnb
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\bin\x86\Debug\Pong.exe
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\bin\x86\Debug\Pong.pdb
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\obj\x86\Debug\Pong.csprojResolveAssemblyReference.cache
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\obj\x86\Debug\Pong.exe
+C:\Users\bnichols\Documents\GitHub\PaddleBattle\Pong\Pong\Pong\obj\x86\Debug\Pong.pdb

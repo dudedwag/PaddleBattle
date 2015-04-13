@@ -20,14 +20,12 @@ namespace Pong
         SpriteBatch spriteBatch;
         SpriteFont quartzMS;
         Vector2 resolution;
-        int score1, score2;
 
         Texture2D paddleTex;
         Paddle leftPaddle;
 
         Texture2D ballTex;
         Ball ball;
-       
 
         public Game1()
         {
@@ -47,8 +45,6 @@ namespace Pong
             // TODO: Add your initialization logic here
             IsMouseVisible = true;
             resolution = new Vector2(graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
-            score1 = 0;
-            score2 = 0;
             base.Initialize();
         }
 
@@ -66,7 +62,7 @@ namespace Pong
             leftPaddle = new Paddle(paddleTex, resolution);
 
             ballTex = Content.Load<Texture2D>("ball");
-            ball = new Ball(ballTex, resolution);
+            ball = new Ball(ballTex, resolution, this);
             // TODO: use this.Content to load your game content here
         }
 
@@ -92,7 +88,6 @@ namespace Pong
             leftPaddle.Update();
             ball.Update();
             ball.CheckCollision(leftPaddle, this);
-            
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -113,6 +108,10 @@ namespace Pong
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+        }
+        public void Score()
+        {
+
         }
         
     }

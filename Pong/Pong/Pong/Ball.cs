@@ -18,9 +18,10 @@ namespace Pong
         Color color;
         Texture2D sprite;
         Random rand;
+        Game1 mainGame;
         int score1, score2;
         
-        public Ball(Texture2D _sprite, Vector2 _resolution)
+        public Ball(Texture2D _sprite, Vector2 _resolution, Game1 _game)
         {
             sprite = _sprite;
             resolution = _resolution;
@@ -28,6 +29,7 @@ namespace Pong
             score2 = 0;
             rand = new Random();
             Spawn();
+            mainGame = _game;
         }
         public void Update()
         {
@@ -60,7 +62,7 @@ namespace Pong
             position = new Vector2(resolution.X / 2 - sprite.Width, resolution.Y / 2 - sprite.Height);          
             speed = new Vector2(rand.Next(1, 5), rand.Next(1, 5));
             //Randomly choose -1 or 1.
-            direction = new Vector2((rand.Next(0, 1) * 2) - 1, rand.Next(0, 1) * 2 - 1);                        
+            direction = new Vector2((rand.Next(0, 2) * 2) - 1, rand.Next(0, 2) * 2 - 1);                        
         }
         public void CheckBounds()
         {
