@@ -22,7 +22,9 @@ namespace Pong
         Vector2 resolution;
 
         Texture2D paddleTex;
-        Paddle leftPaddle;
+        LeftPaddle leftPaddle;
+
+        RightPaddle rightPaddle;
 
         Texture2D ballTex;
         Ball ball;
@@ -59,7 +61,8 @@ namespace Pong
             quartzMS = Content.Load<SpriteFont>("QuartzMS");
 
             paddleTex = Content.Load<Texture2D>("paddle");
-            leftPaddle = new Paddle(paddleTex, resolution);
+            leftPaddle = new LeftPaddle(paddleTex, resolution);
+            rightPaddle = new RightPaddle(paddleTex, resolution);
 
             ballTex = Content.Load<Texture2D>("ball");
             ball = new Ball(ballTex, resolution, this);
@@ -85,9 +88,12 @@ namespace Pong
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            leftPaddle.Update();
+            gameTime++;
+            leftPaddle.Update(ball);
+            rightPaddle.Update(ball);
             ball.Update();
             ball.CheckCollision(leftPaddle, this);
+            ball.CheckCollision(rightPaddle, this);
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -102,6 +108,7 @@ namespace Pong
             GraphicsDevice.Clear(Color.Black);
             spriteBatch.Begin();
             leftPaddle.Draw(spriteBatch);
+            rightPaddle.Draw(spriteBatch);
             ball.Draw(spriteBatch);            
             spriteBatch.DrawString(quartzMS, ball.Score1 + " | " + ball.Score2, new Vector2(resolution.X / 2, 12),Color.White);
             spriteBatch.End();

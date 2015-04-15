@@ -10,7 +10,13 @@ namespace Pong
 {
     class LeftPaddle : Paddle
     {
-        public override void Update()
+        public LeftPaddle(Texture2D _sprite, Vector2 _resolution)
+            : base(_sprite, _resolution)
+        {
+            position = new Vector2(5, (int)_resolution.Y / 2 - sprite.Height);
+        }
+
+        public override void Update(Ball _ball)
         {
             if(Keyboard.GetState().IsKeyDown(Keys.Up))
             {

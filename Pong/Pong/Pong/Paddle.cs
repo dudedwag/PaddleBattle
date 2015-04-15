@@ -21,9 +21,10 @@ namespace Pong
         {
             sprite = _sprite;
             resolution = _resolution;
-            position = new Vector2(5,(int)_resolution.Y/2 - sprite.Height);
+            
         }
-        public virtual void Update(){}
+        public virtual void Update() { }
+        public virtual void Update(Ball _ball){}
         
         public virtual void Draw(SpriteBatch sb)
         {

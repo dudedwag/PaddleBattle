@@ -43,16 +43,18 @@ namespace Pong
         }
         public void CheckCollision(Paddle _paddle, Game _game)
         {
-            //If left side of ball is between left and right side of paddle
-            if (position.X < (_paddle.Position.X + _paddle.Width) && position.X > _paddle.Position.X)
+            float currentDirection = direction.X;
+            //If left || right side of ball is between left && right side of any paddle.
+            if ((position.X < (_paddle.Position.X + _paddle.Width) && position.X > _paddle.Position.X) ||
+                (position.X + sprite.Width > (_paddle.Position.X) && position.X + sprite.Width < _paddle.Position.X + _paddle.sprite.Width))
             {
                 //If top of ball or bottom of ball is between top and bottom of paddle.
                 if ((position.Y > _paddle.Position.Y) && (position.Y < (_paddle.Position.Y + _paddle.Height)) || (position.Y + sprite.Height > _paddle.Position.Y) && (position.Y + sprite.Height < (_paddle.Position.Y + _paddle.Height)))
                 {
-                    if(direction.X == -1)
-                    direction.X *= -1;
+                    if (direction.X == currentDirection)
+                        direction.X *= -1;
                 }
-                    
+
             }
            
         }

@@ -1,3 +1,0 @@
-Content\paddle.xnb
-Content\ball.xnb
-Content\QuartzMS.xnb
